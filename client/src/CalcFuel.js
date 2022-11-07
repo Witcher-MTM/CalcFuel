@@ -4,7 +4,7 @@ class CalcFuel extends React.Component{
     CalcuteFuel(){
         var fuel = document.getElementById('fuel');
         var resfuel = document.getElementById('ResFuel');
-        if(fuel.innerText === '' && resfuel.innerText === ''){
+        if(fuel.value != '' && resfuel.value != ''){
             var h2 = document.getElementById('hResult');
             var resultinfo = 100/resfuel.value;
             h2.innerHTML = "Сможете проехать "+resultinfo*fuel.value+"км";
